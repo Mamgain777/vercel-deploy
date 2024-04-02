@@ -2,7 +2,7 @@
   "name": "vercel_deploy",
   "version": "1.0.0",
   "description": "vercel dployement example",
-  "main": "app.js",
+  "main": "./routes/app.js",
   "engines": {
     "node": "20.x"
   },
