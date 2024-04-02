@@ -7,6 +7,4 @@ app.get('/', (req,res)=>{
     res.json({"msg": "Hello World to vercel!!"});
 });
 
-app.listen(port,()=>{
-    console.log(`Running on port ${port}`);
-});
+module.exports = app;
