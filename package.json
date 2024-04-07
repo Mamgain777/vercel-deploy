@@ -2,13 +2,13 @@
   "name": "vercel_deploy",
   "version": "1.0.0",
   "description": "vercel dployement example",
-  "main": "./routes/app.js",
+  "main": "./src/app.js",
   "engines": {
     "node": "20.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "author": "HImanshu",
   "license": "ISC",
