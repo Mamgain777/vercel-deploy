@@ -1,11 +1,13 @@
 const express = require('express');
-const path = require('path');
 const port = 7777;
-
+const getFilePath = require('../getHtmlFile.js')
 const app = express();
+const testRoute = require('./routes/testRoute.js')
+
+app.use('/api',testRoute);
 
 app.get('/', (req, res) => {
-    const filepath = path.join(__dirname, "..", 'frontend', 'index.html');
+    let filepath = getFilePath("index.html")
     return res.sendFile(filepath);
 });
 app.get('/newUpdate', (req, res) => {
